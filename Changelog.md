@@ -1,9 +1,52 @@
 AppleALC Changelog
 ==================
+#### v1.6.2
+- Added constants for macOS 12 support
+- Added 10.6 and 10.7 support in 64-bit mode
+- Fixed HDMI Audio 0xA171 for Acer VX5-591G by dongcodebmt
+- Added ALC256 layout-id 70 for Hasee KingBook X57S1 by m0d16l14n1
+- Update WakeConfigData for ALC255 layout-id 96 by wozhinengpa
+
+#### v1.6.1
+- Fixed broken data in CS4206's layout76.xml
+- Added PathMapID 4206 and 8800 for ALC885's Layout 67 and 73
+- Fixed broken data in ALC289's layout87.xml
+- Fixed automatic resource formatting on build
+- Fixed ALC885's Info.plist Platforms entry
+- Added 400 Series (0xF1C8 Z490 + Intel 11 Gen) PCH HD Audio Controller
+- Fixed `alc-verb` device indexing giving varying results over reboots
+- Added device listing with indices via `-L`/`-l` in `alc-verb`
+- Added AppleALCU kext variant for digital-only audio setup
+- Disabled kext patching for verb support and delays when not requested
+- FIxed replace count in `WhiskeyLake` HDA patches
+- Separated Intel `WhiskeyLake` laptop and desktop patches
+- Added ALC1220 layout-id 35 for MSI GP75 9SD by Win7GM
+- Added ALC1200 (display as ALCS1200A) layout-id 69 for Asrock Z490M ITX/AC by Lorys89 & Vorshim92
+- Added ALC293 layout-id 30 for HASEE ZX8-CT5DA by RushiaBoingBoing
+- Added ALC255 layout-id 96 for dell 5559 by Bhavin
+- Fix mute on Conxexant CX 20724 by Human7900
+- Added ALC1220 layout-id 17 for Gigabyte Z490 Vision G manual SP/HP by NIBLIZE
+- Added ALC255 layout-id 82 for minisforum U820 by daliansky
+- Added ALC282 layout-id 21 for TinyMonster ECO by DalianSky
+
+#### v1.6.0
+- Added `use-layout-id` property to use `layout-id` as is on Macs
+- Added `use-apple-layout-id` property to use `apple-layout-id` as `layout-id` on Macs
+- Fixed CS4206 and ALC885 support for legacy Macs
+- Improvement ALC289 layout-id 87 for Alienware m15 by GitNaufal
+- Added ALC1220 layout-id 98 for Mi Gaming Notebook Creator by Xsixu
+- Added ALC1220 layout-id 100 for Hasee_G8-CU7PK by R-a-s-c-a-l
+
 #### v1.5.9
 - Added CS4206 layout-id 24 and 60
 - Added 500 Series (0xF0C8 Z590 + Intel 10 Gen) PCH HD Audio Controller
 - Added 500 Series (0x43C8 Z590 + Intel 11 Gen) PCH HD Audio Controller
+- Added ALC289 layout-id 87 for Alienware m15 by GitNaufal
+- Added ALC289 layout-id 15 for Dell 7730 Precision CM240 by MacPeet
+- Added ALC897 layout-id 69 for MSI-Z490-A Pro by mathcampbell
+- Added IDT 92HD95 layout-id 14 for LenovoG710 by Svilen88
+- Added ALC235 layout-id 18 for asrock 310 bb by viorel78
+- Added controller patch for 100 Series (8086:A170) by dhinakg
 
 #### v1.5.8
 - Improved resource packaging by stripping optional tags
